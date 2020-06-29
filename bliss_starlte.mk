@@ -37,7 +37,7 @@ PRODUCT_MODEL := SM-G960F
 PRODUCT_MANUFACTURER := samsung
 
 #Blissify
-export BLISS_MAINTAINER=garett_09
+export BLISS_MAINTAINER=Adrian Sian (garett_09)
 export BLISS_BUILDTYPE=OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
@@ -49,4 +49,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
         PRIVATE_BUILD_DESC="starltexx-user 10 QP1A.190711.020 G960FXXU7DTAA release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bliss.maintainer=garett_09
+    ro.bliss.maintainer=Adrian Sian (garett_09)
