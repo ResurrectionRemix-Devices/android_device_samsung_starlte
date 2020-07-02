@@ -42,7 +42,7 @@ export BLISS_BUILDTYPE=OFFICIAL
 
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := samsung/starltexx/starlte:10/QP1A.190711.020/G960FXXU7DTAA:user/release-keys
+BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
         PRODUCT_NAME=starltexx \
