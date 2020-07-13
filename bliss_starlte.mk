@@ -35,18 +35,21 @@ PRODUCT_NAME := bliss_starlte
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-G960F
 PRODUCT_MANUFACTURER := samsung
-
-#Blissify
-export BLISS_MAINTAINER=Adrian Sian (garett_09)
-export BLISS_BUILDTYPE=OFFICIAL
-
+PRODUCT_PDA_MODEL := G960F
+PRODUCT_PDA_MODEL_VERSION := XXU7DTB4
+PRODUCT_PDA_VERSION := $(PRODUCT_PDA_MODEL)$(PRODUCT_PDA_MODEL_VERSION)
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
-BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys
+#Blissify
+export BLISS_BUILDTYPE=OFFICIAL
+
+BUILD_FINGERPRINT := samsung/starltexx/starlte:10/QP1A.190711.020/$(PRODUCT_PDA_VERSION):user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        PRODUCT_NAME=starltexx \
-        PRIVATE_BUILD_DESC="starltexx-user 10 QP1A.190711.020 G960FXXU7DTAA release-keys"
+    PRODUCT_NAME=starltexx \
+    PRODUCT_DEVICE=starlte \
+    PRIVATE_BUILD_DESC="starltexx-user 10 QP1A.190711.020 $(PRODUCT_PDA_VERSION) release-keys"
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.bliss.maintainer=Adrian Sian (garett_09)
+    ro.build.PDA=$(PRODUCT_PDA_VERSION)
+    
